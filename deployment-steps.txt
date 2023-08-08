@@ -1,0 +1,40 @@
+1. Compress the files
+2. Export the database
+3. Login to Godaddy
+4. Upload the zipped project
+5. Extract the zipped Project
+6. Import the database in cdis_2019 database
+7. delete .env file and copy the .env from public_html to cdis directory
+8. Connect the SSH shell
+9. delete storage directory from public
+10. php artisan storage:link
+11. sudo chmod 777 -R storage
+12. sudo chmod 777 -R vendor/mpdf/mpdf/src/Config/../../tmp
+
+- crontab -e
+- * * * * * php /var/www/html/projects/backend/cdis/artisan schedule:run 1>> /dev/null 2>&1
+
+- Online aws server path
+- * * * * * php /var/www/html/cdis/artisan schedule:run 1>> /dev/null 2>&1
+
+- git clone https://gitlab.com/ansargondal/cdis.git
+
+- mv /var/www/html/cdis /var/www/html/cdis-old-v17 && cd  /var/www/html/ && git clone https://gitlab.com/ansargondal/cdis.git && cd cdis && composer install
+- cp ../cdis-old-v16/.env . && php artisan storage:link && mkdir -p public/tmp/letters && sudo chmod 777 -R public && sudo chmod 777 -R storage && sudo chmod 777 -R vendor/mpdf/mpdf/src/Config/../../tmp
+
+- add county_code column and fill it up!
+- alter table counties
+  	add county_code varchar(10) null after address_2;
+- update `counties` set county_code =   42017 where id = 1;
+- update `counties` set county_code =   42091 where id = 2;
+
+
+
+
+
+
+
+- check contacts feature in Montgomery district
+
+
+

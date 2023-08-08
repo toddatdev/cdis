@@ -1,0 +1,153 @@
+.ibox.border-light {
+    border-left: 1px solid #dee2e6 !important;
+    border-right: 1px solid #dee2e6 !important;
+    border-bottom: 1px solid #dee2e6 !important;
+}
+
+table tbody td {
+    vertical-align: middle !important;
+    padding: 5px;
+    position: relative;
+}
+
+/* ** Smart wizard plugin overrides
+  **  active arrow background ***/
+
+
+.sw-theme-arrows > ul.step-anchor > li.active > a {
+    background-color: #18a689 !important;
+}
+
+.sw-theme-arrows > ul.step-anchor > li.active > a:after {
+    border-left: 30px solid #18a689 !important;
+}
+
+.ibox-content {
+    position: relative;
+}
+
+.note-editor.note-frame .note-editing-area .note-codable {
+    padding-top: 30px !important;
+}
+
+.readonly-date {
+    background-color: #fff !important;
+}
+
+#table-files {
+    table-layout: fixed;
+    margin-bottom: .5em;
+}
+
+#table-files .fa-plus {
+
+    font: normal normal normal 18px/2.3 FontAwesome !important
+}
+
+#table-files a .fa-trash {
+    color: #fff;
+    background: #F35E61;
+    font-size: 20px;
+}
+
+#table-files .btn-circle.btn-lg {
+    width: 40px;
+    padding: 0;
+    height: 40px;
+    border-radius: 25px;
+    font-size: 18px;
+    line-height: 1.53;
+}
+
+
+.file-upload-wrapper {
+    position: relative;
+    width: 95%;
+    height: 25px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.file-upload-wrapper:after {
+    border: 1px solid #DCDCDC;
+    content: attr(data-text);
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    padding: 12px 10px;
+    display: block;
+    width: calc(100% - 40px);
+    pointer-events: none;
+    z-index: 20;
+    height: 5px;
+    line-height: 2px;
+    color: #999;
+    border-radius: 5px 0 0 5px;
+    font-weight: 300;
+}
+
+.file-upload-wrapper:before {
+    content: 'SELECT';
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    height: 25px;
+    background: #18a689;
+    color: #fff;
+    font-weight: 600;
+    z-index: 25;
+    font-size: 12px;
+    line-height: 25px;
+    padding: 0 5px;
+    text-transform: uppercase;
+    pointer-events: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.file-upload-wrapper:hover:before {
+    background: #3d8c63;
+}
+
+.file-upload-wrapper input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.timer {
+    text-align: center;
+    padding: 30px;
+    color: #fff;
+}
+
+.timer h1 {
+    font-weight: normal;
+    text-align: center;
+}
+
+.timer li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+.timer li span {
+    display: block;
+    font-size: 4.5rem;
+}
+
